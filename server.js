@@ -1,3 +1,8 @@
+/*
+    Steven Tran
+    UofT SCS Coding Bootcamp
+*/
+//requires
 var express = require('express');
 var bodyParser = require('body-parser');
 var cors = require('cors');
@@ -8,6 +13,13 @@ var app = express();
 var port = 3000; //could use 8080, 5000, these are open ports
 var connection;
 
+
 //middleware use
 app.use(cors()); //saves us from having to do access-control-allow-origin
 app.use(bodyParser.json());
+
+var route = require('./app/routing/htmlRoutes')(app, path);
+
+app.listen(port, ()=> {
+    console.log(`Connected on port: ${port}`);
+});
