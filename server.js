@@ -18,7 +18,9 @@ app.use(cors()); //saves us from having to do access-control-allow-origin
 app.use(bodyParser.json());
 
 //importing routes
+require('./app/routing/apiRoutes')(app);
 require('./app/routing/htmlRoutes')(app, path);
+
 
 app.listen(port, ()=> {
     console.log(`Connected on port: ${port}`);
