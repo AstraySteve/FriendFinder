@@ -3,7 +3,6 @@
     UofT SCS Coding Bootcamp
 */
 
-//Test code
 module.exports = (app, path)=> {
     app.get('/survey', (req, res)=>{
         res.sendFile(path.resolve("./app/public/survey.html"));
@@ -13,5 +12,3 @@ module.exports = (app, path)=> {
         res.sendFile(path.resolve("./app/public/home.html"));
     });
 }
-
-
