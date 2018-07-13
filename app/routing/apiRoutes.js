@@ -2,16 +2,17 @@
     Steven Tran
     UofT SCS Coding Bootcamp
 */
-var friends = require("../data/friends");
+var friendsData = require("../data/friends");
 
 module.exports = (app)=>{
     app.get('/api/friends', (req, res)=>{
         //something
-        res.json(friends.list);
+        res.json(friendsData);
     });
     
     app.post('/api/friends', (req, res)=>{
         //something
-        res.json({"Result": "post"});
+        friendsData.push(req.body);
+        res.json(true);
     });
 }
