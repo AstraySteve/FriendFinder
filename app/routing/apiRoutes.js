@@ -13,6 +13,6 @@ module.exports = (app)=>{
     app.post('/api/friends', (req, res)=>{
         //something
         friendsData.push(req.body);
-        res.json(true);
+        res.json(friendsData[1]);
     });
 }

@@ -11,6 +11,9 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
         
+        <!--Fonts-->
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+        
         <title>FriendFinder</title>
     </head>
     <body>
@@ -131,25 +134,24 @@
 
             <!--Submit Button-->
             <button type="submit" class="btn btn-primary btn-block" id="submit">
-                <h4>Submit</h4>
+                <h4><i class="glyphicon glyphicon-ok-circle"></i> Submit</h4>
             </button>
             <hr>
-                
+            
         </div>
-        
+
         <!-- Modal -->
         <div class="modal fade" id="results-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel"><strong>Best Match</strong></h5>
+                        <h5 class="modal-title" id="exampleModalLabel">Best Match</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
-                        </button>
+                         </button>
                     </div>
                     <div class="modal-body">
-                        <h2 id="match-name"></h2>
-                        <img id="match-img" src="" alt="match-img">
+                    ...
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
@@ -158,7 +160,15 @@
             </div>
         </div>
 
+        <button type="button" class="btn btn-primary" id="test">
+            Launch demo modal
+        </button>
+        
         <script type="text/javascript">
+
+            $('#test').on('click', function(){
+                $("#exampleModal").modal("toggle");
+            });
             //Capture inputs
             $('#submit').on('click', (event)=>{
                 //console.log("button clicked");
@@ -213,11 +223,7 @@
                         console.log(data);
                         $("#match-name").text(data.name);
                         $("#match-img").attr("src",data.photo);
-                        $("#results-modal").modal("toggle");
                     });
-                }
-                else{
-                    console.log("please fill out all fields");
                 }
             });
         </script>
