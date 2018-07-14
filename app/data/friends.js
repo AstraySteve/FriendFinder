@@ -5,8 +5,8 @@
 
 var friendsArray = [
     {
-        "name": "Ahmed",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_200_200/AAEAAQAAAAAAAAq7AAAAJDAwYzI4NTQ4LWYwZWUtNGFkYS1hNTYwLTZjYzkwY2ViZDA3OA.jpg",
+        "name": "Arash",
+        "photo": "https://vignette.wikia.nocookie.net/fategrandorder/images/9/98/Arash4.png/revision/latest?cb=20170207175557",
         "scores": ["5","1","4","4","5","1","2","5","4","1"]
     },
     {
@@ -26,17 +26,17 @@ var friendsArray = [
     },
     {
         "name": "Lou Ritter",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAkDAAAAJDhhZTI5NTk2LWQzZjUtNDJjZi1hMTM2LTQ3ZjNmYjE0YmY2NA.jpg",
+        "photo": "https://static1.fjcdn.com/comments/Iamthebestfapper+rolled+a+random+image+posted+in+comment+63+at+_a4096c284eba93cfb31486a84705bdb1.jpg",
         "scores": ["4","3","4","1","5","2","5","3","1","4"]
     },
     {
-        "name": "Jordan Biason",
-        "photo": "https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAisAAAAJGUxYzc4YzA0LWQxMzUtNGI4NS04YTFiLTkwYzM0YTZkNzA2NA.jpg",
+        "name": "WATSON AI",
+        "photo": "https://images.techhive.com/images/article/2017/01/1024px-ibm_watson-100632019-orig-100703361-large.jpg",
         "scores": ["4","4","2","3","2","2","3","2","4","5"]
     },
     {
         "name": "123",
-        "photo": "qwe.png",
+        "photo": "https://www.shareicon.net/data/128x128/2015/12/28/694274_numbers_512x512.png",
         "scores": ["1","1","1","1","1","1","1","1","1","1"]
     },
     {
